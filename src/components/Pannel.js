@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import axios from "axios";
+import { API_BASE_URL } from "../Constants";
 
 const Pannel = styled.div`
   grid-area: 1 / 2 / 12 / 3;
@@ -9,15 +11,17 @@ const Pannel = styled.div`
 
 export default function Details(props) {
   const { charachters, activeButton } = props;
+  let testUndefined = charachters === undefined ? true : false;
+
   return (
     <Pannel className='pannel'>
-      <h1>{charachters[activeButton].name}</h1>
-      <p>height: {charachters[activeButton].height}</p>
-      <p>mass: {charachters[activeButton].mass}</p>
-      <p>hair color: {charachters[activeButton].hair_color}</p>
-      <p>eye color: {charachters[activeButton].eye_color}</p>
-      <p>birth year: {charachters[activeButton].birth_year}</p>
-      <p>gender: {charachters[activeButton].gender}</p>
+      {/* <h1>{testUndefined ? "" : charachters[activeButton].name}</h1>
+      <p>height: {testUndefined ? "" : charachters[activeButton].height}</p>
+      <p>mass: {testUndefined ? "" : charachters[activeButton].mass}</p>
+      <p>hair color: {testUndefined ? "" : charachters[activeButton].hair_color}</p>
+      <p>eye color: {testUndefined ? "" : charachters[activeButton].eye_color}</p>
+      <p>birth year: {testUndefined ? "" : charachters[activeButton].birth_year}</p>
+      <p>gender: {testUndefined ? "" : charachters[activeButton].gender}</p> */}
     </Pannel>
   );
 }

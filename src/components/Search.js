@@ -21,7 +21,7 @@ const Search = styled.div`
 export default function Details(props) {
   return (
     <Search className='search'>
-      <i class='fa-solid fa-magnifying-glass'></i>
+      <i className='fa-solid fa-magnifying-glass'></i>
       <input placeholder='search'></input>
     </Search>
   );

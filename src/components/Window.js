@@ -26,10 +26,12 @@ export default function Details(props) {
     const charachterElements = document.querySelectorAll(".charachter");
     charachterElements.forEach((element) => {
       element.addEventListener("click", () => {
-        setActiveButton(document.querySelector(".active").id);
-        return () => {
-          element.removeEventListener("click", false);
-        };
+        setTimeout(() => {
+          setActiveButton(document.querySelector(".active").id);
+          return () => {
+            element.removeEventListener("click", false);
+          };
+        }, 10);
       });
     });
   }, []);

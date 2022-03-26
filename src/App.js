@@ -11,7 +11,7 @@ function App() {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [charachterObject, setCharachterObject] = useState({});
+  const [charachterObject, setCharachterObject] = useState([]);
   const [nextLink, setNextLink] = useState("#");
   const [prevLink, setPrevLink] = useState("#");
 
