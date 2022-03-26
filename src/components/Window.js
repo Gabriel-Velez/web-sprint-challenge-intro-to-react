@@ -20,18 +20,19 @@ const Window = styled.div`
 export default function Details(props) {
   const { charachters, next, perv } = props;
   const [activeButton, setActiveButton] = useState(0);
+  console.log(activeButton);
   numOfItems = charachters.length + 2;
 
   useEffect(() => {
     const charachterElements = document.querySelectorAll(".charachter");
     charachterElements.forEach((element) => {
       element.addEventListener("click", () => {
-        setTimeout(() => {
-          setActiveButton(document.querySelector(".active").id);
-          return () => {
-            element.removeEventListener("click", false);
-          };
-        }, 10);
+        setActiveButton(document.querySelector(".active").id);
+
+        console.log(document.querySelector(".active").id);
+        return () => {
+          element.removeEventListener("click", false);
+        };
       });
     });
   }, []);

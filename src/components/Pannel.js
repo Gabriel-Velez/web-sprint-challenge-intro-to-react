@@ -11,11 +11,17 @@ const Pannel = styled.div`
 
 export default function Details(props) {
   const { charachters, activeButton } = props;
-  let testUndefined = charachters === undefined ? true : false;
-
+  let testUndefined = charachters === undefined || charachters.length === 0 ? true : false;
+  console.log(testUndefined);
+  //   console.log(charachters[activeButton]);
+  console.log(charachters);
+  //   console.log(activeButton);
   return (
     <Pannel className='pannel'>
-      <h1>Info was suposed to go here but i had to comment it out </h1>
+      <h1>Info was suposed to go here </h1>
+      <h3>
+        This caused my whole app to not render. <br /> Asked for help, didnt get any ;(
+      </h3>
       <p>height:</p>
       <p>mass:</p>
       <p>hair color:</p>
