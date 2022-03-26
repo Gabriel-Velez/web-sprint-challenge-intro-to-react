@@ -4,7 +4,6 @@ import Search from "./Search";
 import Charachter from "./Character";
 import Pannel from "./Pannel";
 import PageNumber from "./PageNumber";
-
 let numOfItems;
 
 const Window = styled.div`
@@ -15,6 +14,7 @@ const Window = styled.div`
   grid-row-gap: 0px;
   width: clamp(50vw, 1000px, 100vw);
   text-align: left;
+  position: relative;
 `;
 
 export default function Details(props) {
