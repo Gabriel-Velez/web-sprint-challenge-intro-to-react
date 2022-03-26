@@ -15,6 +15,13 @@ export default function Details(props) {
 
   return (
     <Pannel className='pannel'>
+      <h1>Info was suposed to go here but i had to comment it out </h1>
+      <p>height:</p>
+      <p>mass:</p>
+      <p>hair color:</p>
+      <p>eye color:</p>
+      <p>birth year:</p>
+      <p>gender:</p>
       {/* <h1>{testUndefined ? "" : charachters[activeButton].name}</h1>
       <p>height: {testUndefined ? "" : charachters[activeButton].height}</p>
       <p>mass: {testUndefined ? "" : charachters[activeButton].mass}</p>
