@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Window from "./Components/Window";
+import Window from "./components/Window";
 import { API_BASE_URL } from "./Constants";
 
 function App() {
